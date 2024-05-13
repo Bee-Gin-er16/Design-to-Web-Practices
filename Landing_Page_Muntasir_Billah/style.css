@@ -1,0 +1,98 @@
+:root {
+    /*Neutral*/
+    --black: #263238;
+    --d_grey: #4d4d4d;
+    --grey: #717171;
+    --l_grey: #89939E;
+    --blue_grey: #abbed1;
+    --silver: #f5f7fa;
+    --white: #ffffff;
+
+    /*Primary*/
+    --prim_green: #4CAF4F;
+    --prim_black: #263238;
+    --prim_blue: #2194f3;
+
+    /*Shade*/
+    --gr_sh_1: #43A046;
+    --gr_sh_2: #388E3B;
+    --gr_sh_3: #237D31;
+    --gr_sh_4: #1B5E1F;
+    --gr_sh_5: #103E13;
+
+    /*Tint*/
+    --gr_tint_1: #66BB69;
+    --gr_tint_2: #81C784;
+    --gr_tint_3: #A5D6A7;
+    --gr_tint_4: #C8E6C9;
+    --gr_tint_5: #E8F5E9;
+
+    /*Others*/
+    --warn: #FBC02D;
+    --error: #E53835;
+    --success: #2E7D31;
+
+    --font_fam: "Inter", sans-serif; 
+}
+
+* {
+    font-family: var(--font_fam);
+    margin: 0;
+    /* width: 100%; */
+}
+
+nav {
+    padding: 3dvh 10dvw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 3dvh;
+    align-items: center;
+    background-color: var(--silver);
+    /* line-height: 24px; */
+}
+
+nav img {
+    width: auto;
+}
+
+nav ul {
+    display: flex;
+    gap: 3rem;
+    list-style: none;
+    align-items: center;
+}
+
+nav .cta_btns{
+    display: flex;
+    gap: 1rem;
+}
+
+.cta_btns button {
+    width: fit-content;
+    height: fit-content;
+    font-size: 1rem;
+    /* padding: 10px; */
+    border: none;
+    border-radius: 5px;
+    /* font-weight: bold; */
+    padding: 1.5dvh 1.5dvw;
+}
+
+.cta_btns :nth-child(1){
+    background-color: inherit;
+    color: var(--gr_sh_1);
+}
+
+.cta_btns :nth-child(2){
+    background-color: var(--gr_sh_1);
+    color: var(--white);
+}
+
+.hero_section {
+    display: flex;
+    padding: 10dvh 0;
+    justify-content: space-around;
+    background-color: var(--silver);
+    /* border: 1px solid black; */
+}
