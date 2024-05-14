@@ -97,7 +97,7 @@ h1 {
 }
 
 p{
-    color: var(--l_grey);
+    color: var(--grey);
     font-size: 1.2rem;
 }
 
@@ -120,7 +120,7 @@ p{
     font-size: 4rem;
 }
 
-.hero_desc mark, .metric_desc mark{
+.hero_desc mark, .metric_desc mark, .author_desc mark{
     background-color: unset;
     color: var(--prim_green);
 }
@@ -145,7 +145,7 @@ p{
     justify-content: space-around;
 }
 
-.testimony_section p {
+.testimony_section p, .last p{
     padding-top: 20px;
 }
 
@@ -179,7 +179,7 @@ p{
     font-size: 1.1rem;
 }
 
-.learn_section {
+.learn_section{
     display: flex;
     /* padding: var(--content_padding); */
     justify-content: center;
@@ -203,7 +203,7 @@ p{
     line-height: 20px;
 }
 
-.customer_metrics {
+.customer_metrics, .author_notes{
     background-color: var(--silver);
     display: flex;
     padding: var(--content_padding);
@@ -214,4 +214,54 @@ p{
     display: flex;
     flex-direction: column;
     gap: 1dvh;
+}
+
+.metric_desc h1{
+    font-size: 2.5rem;
+}
+
+.metric_numbers {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 5dvw;
+    grid-row-gap: 5dvh;
+}
+
+.metric_numbers:nth-child(1) { grid-area: 1 / 1 / 2 / 2; }
+.metric_numbers:nth-child(2) { grid-area: 1 / 2 / 2 / 3; }
+.metric_numbers:nth-child(3) { grid-area: 2 / 1 / 3 / 2; }
+.metric_numbers:nth-child(4) { grid-area: 2 / 2 / 3 / 3; }
+
+.metric_card {
+    display: flex;
+    gap: 2dvw;
+}
+
+.metric_card_desc { 
+    display: flex;
+    flex-direction: column;
+    gap: 10%;
+}
+
+.last{
+    padding: var(--content_padding);
+}
+
+.author_notes{
+    background-color: var(--silver);
+}
+
+.author_desc {
+    width: 55%;
+    line-height: 24px;
+}
+
+.author_desc p, .author_desc h1{
+    padding-bottom: 2dvh;
+}
+
+.author_desc .test_logos {
+    display: flex;
+    justify-content: space-between;
 }
