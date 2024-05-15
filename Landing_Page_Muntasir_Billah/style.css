@@ -70,7 +70,8 @@ nav .cta_btns{
     gap: 1rem;
 }
 
-.cta_btns button, .hero_section button, .learn_section button{
+
+.cta_btns button, .hero_section button, .learn_section button {
     width: fit-content;
     height: fit-content;
     font-size: 1rem;
@@ -99,6 +100,7 @@ h1 {
 p{
     color: var(--grey);
     font-size: 1.2rem;
+    line-height: 24px;
 }
 
 .hero_section {
@@ -120,12 +122,13 @@ p{
     font-size: 4rem;
 }
 
-.hero_desc mark, .metric_desc mark, .author_desc mark{
+.hero_desc mark, .metric_desc mark, .author_desc h2, .test_logos h2,
+.read_desc a{
     background-color: unset;
     color: var(--prim_green);
 }
 
-.hero_section button, .learn_section button{
+.hero_section button, .learn_section button {
     padding: 2.5dvh 2.5dvw;
     font-size: 1.2rem;
 }
@@ -194,7 +197,7 @@ p{
     padding-top: 10dvh;
 }
 
-.learn_section button{
+.learn_section button {
     margin-top: 20px;
 }
 
@@ -248,8 +251,14 @@ p{
     padding: var(--content_padding);
 }
 
+.last .learn_desc h1 {
+    max-width: unset;
+    font-size: 2.2rem;
+}
+
 .author_notes{
     background-color: var(--silver);
+    padding: 4dvh 0;
 }
 
 .author_desc {
@@ -257,11 +266,114 @@ p{
     line-height: 24px;
 }
 
-.author_desc p, .author_desc h1{
+.author_desc p, .author_desc h2{
     padding-bottom: 2dvh;
 }
 
 .author_desc .test_logos {
     display: flex;
     justify-content: space-between;
+    align-items: end;
+}
+
+.author_desc .test_logos h2{
+    padding-bottom: unset;
+}
+
+.author_desc .test_logos h2 a{
+    text-decoration: unset;
+    color: unset;
+}
+
+.read_section {
+    padding: 5dvh 0 10dvh 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.read_section h1{
+    font-size: 2.2rem;
+}
+
+.read_section p{
+    width: 50%;
+    font-size: 1.2rem;
+    padding-top: 20px;
+    padding-bottom: 2dvh;
+}
+
+.read_cards {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.read_card {
+    display: flex;
+    width: 25%;
+    flex-direction: column;
+}
+
+.read_card .read_desc {
+    display: flex;
+    z-index: 1;
+    background-color: var(--silver);
+    margin: -9dvh 2dvw 0 2dvw;
+    padding-bottom: 3dvh;
+    border-radius: 8px;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 2px 4px 20px var(--l_grey);
+    font-weight: bold;
+}
+
+.read_desc p {
+    width: 85%;
+    font-size: 1.2rem;
+    padding: 3dvh 0;
+}
+
+.read_desc a{
+    font-size: 1.17rem;
+}
+
+.end_section {
+    padding: var(--content_padding);
+    background-color: var(--silver);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.end_section h1 {
+    font-weight: bold;
+    font-size: 4rem;
+    width: 50%;
+    color: var(--black);
+}
+
+.end_section button {
+    width: fit-content;
+    height: fit-content;
+    border: none;
+    background-color: var(--gr_sh_1);
+    color: var(--white);
+    border-radius: 5px;
+    margin-top: 20px;
+    padding: 2.5dvh 2.5dvw;
+    font-size: 1rem;
+}
+
+.footer_section {
+    background-color: var(--black);
+    color: var(--white);
+}
+
+.footer_section h1 {
+    padding: 3dvh 10dvw;
+    display: flex;
+    color: unset;
 }
