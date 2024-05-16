@@ -370,10 +370,70 @@ p{
 .footer_section {
     background-color: var(--black);
     color: var(--white);
+    padding: 10dvh 10dvw;
+    display: flex;
+    justify-content: space-evenly;
 }
 
 .footer_section h1 {
-    padding: 3dvh 10dvw;
-    display: flex;
     color: unset;
 }
+
+.copyright {
+    display: flex;
+    flex-direction: column;
+    gap: 10%;
+}
+
+.copyright img {
+    margin-bottom: 10%;
+}
+
+.copyright h4, .cta_col h4 {
+    font-weight: normal;
+}
+
+.social_icons {
+    display: flex;
+    gap: 1.5dvw;
+}
+
+.social_icons img {
+    transform: scale(1.1);
+}
+
+.more_cta {
+    display: flex;
+    gap: 5dvw;
+}
+
+.more_cta h2 {
+    margin-bottom: 10%;
+}
+
+.cta_col {
+    display: flex;
+    flex-direction: column;
+    font-weight: unset;
+    gap: 2dvh;
+}
+
+.email_subscription {
+    background-color: #515b60;
+    border-radius: 8px;
+}
+
+
+input, button {
+    fill: none;
+    background: none;
+    border: none;
+    padding: 15px;
+    font-size: medium;
+}
+
+input::placeholder, input:focus{
+    color: var(--blue_grey);
+    font-size: medium;
+}
+
