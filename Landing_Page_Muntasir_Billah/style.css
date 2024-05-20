@@ -437,3 +437,21 @@ input::placeholder, input:focus{
     font-size: medium;
 }
 
+@media screen and (max-width: 600px) {
+    body, nav, .hero_section {
+        width: 100%;
+        /* margin: 25%; */
+    }
+
+    .hero_section, .hero_desc, .hero_section img {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 5dvh;
+    }
+
+    /* .hero_section {
+        margin: 10%;
+    } */
+}
