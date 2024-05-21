@@ -43,6 +43,8 @@
     /* width: 100%; */
 }
 
+/* || Nav */
+
 nav {
     padding: 3dvh 10dvw;
     display: flex;
@@ -72,7 +74,6 @@ nav .cta_btns{
     gap: 1rem;
 }
 
-
 .cta_btns button, .hero_section button, .learn_section button {
     width: fit-content;
     height: fit-content;
@@ -94,7 +95,7 @@ nav .cta_btns{
     color: var(--white);
 }
 
-/* Permanent CSS tag property */
+/* || Permanent CSS tag property */
 h1 {
     color: var(--d_grey);
 }
@@ -105,6 +106,7 @@ p{
     line-height: 24px;
 }
 
+/* || Header */
 .hero_section {
     display: flex;
     padding: var(--content_padding);
@@ -135,6 +137,7 @@ p{
     font-size: 1.2rem;
 }
 
+/* || Testimony */
 .testimony_section {
     display: flex;
     flex-direction: column;
@@ -155,7 +158,8 @@ p{
 }
 
 .testimony_section h1:nth-of-type(2){
-    max-width: 32dvw;
+    /* max-width: 32dvw; */
+    margin: 0 20%;
     text-align: center;
 }
 
@@ -176,7 +180,7 @@ p{
 }
 
 .customer_card h1 {
-    max-width: 15dvw;
+    width: 15dvw;
 }
 
 .customer_card p{
@@ -208,6 +212,7 @@ p{
     line-height: 20px;
 }
 
+/* || Customer Metric */
 .customer_metrics, .author_notes{
     background-color: var(--silver);
     display: flex;
@@ -249,6 +254,7 @@ p{
     gap: 10%;
 }
 
+/* || Last Learn Section*/
 .last{
     padding: var(--content_padding);
 }
@@ -258,6 +264,7 @@ p{
     font-size: 2.2rem;
 }
 
+/* || Author notes */
 .author_notes{
     background-color: var(--silver);
     padding: 4dvh 0;
@@ -287,6 +294,7 @@ p{
     color: unset;
 }
 
+/* || Read more */
 .read_section {
     padding: 5dvh 0 10dvh 0;
     display: flex;
@@ -341,6 +349,7 @@ p{
     font-size: 1.17rem;
 }
 
+/* || End */
 .end_section {
     padding: var(--content_padding);
     background-color: var(--silver);
@@ -369,6 +378,7 @@ p{
     font-size: 1rem;
 }
 
+/* || Footer */
 .footer_section {
     background-color: var(--black);
     color: var(--white);
@@ -384,7 +394,7 @@ p{
 .copyright {
     display: flex;
     flex-direction: column;
-    gap: 10%;
+    gap: 20px;
 }
 
 .copyright img {
@@ -439,13 +449,16 @@ input::placeholder, input:focus{
     font-size: medium;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1000px) {
+
+    /* || Sections to 100% width */
     body, .hero_section, .testimony_section, .customer_metrics, .last, .author_notes, .read_section, .end_section, .footer_section{
         width: 100%;
         margin: 0;
         /* margin: 25%; */
     }
 
+    /* || Nav query*/
     nav {
         /* width: 100%; */
         display: flex;
@@ -453,9 +466,9 @@ input::placeholder, input:focus{
     }
 
     nav ul li.nav_burger a { display: block; }
-
     nav ul li.nav_item, .cta_btns button { display: none;}
 
+    /* || Hero query */
     .hero_section, .hero_desc, .hero_section img {
         display: flex;
         flex-direction: column;
@@ -464,12 +477,97 @@ input::placeholder, input:focus{
         gap: 5dvh;
     }
 
-    .test_logos {
+    /* || Testimony query */
+    .test_logos{
         margin: 0 20%;
         flex-wrap: wrap;
     }
 
-    /* .hero_section {
-        margin: 10%;
-    } */
+    .customer_logos {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .customer_logos .customer_card {
+        width: 60%;
+    }
+
+    .customer_card h1 {
+        width: 100%;
+    }
+
+    .customer_logos h1, .customer_logos p{
+        margin: 0 30%;
+        width: 100%;
+    }
+
+    .learn_section {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        flex-wrap: wrap;
+        gap: 50px;
+    }
+
+    .learn_section .learn_desc {
+        width: 70%;
+    }
+
+    .learn_desc h1 {
+        max-width: unset;
+        padding-top: unset;
+    }
+
+    .learn_desc p {
+        line-height: 20px;
+    }
+
+    /* || Customer metrics query*/
+    .customer_metrics {
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+    }
+
+    /* || Customer metrics query*/
+    .author_notes {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .author_desc {
+        width: 80%;
+    }
+
+    .author_desc .test_logos{
+        margin: unset;
+    }
+    
+    .author_desc .test_logos h2 {
+        width: 100%;
+        margin: 5% 30% 0; 
+    }
+
+    /* || Read query*/
+    .read_cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .read_card {
+        width: 60%;
+    }
+
+    /* || Footer query*/
+    .footer_section {
+        flex-direction: column;
+        align-items: center;
+        margin: unset;
+        gap: 50px;
+        padding: 10dvh 0;
+    }
 }
