@@ -1,1 +1,1 @@
-alert("The original design is made by Muntasir_Billah from \n figma: https://www.figma.com/@itsmuntasirb")
+// alert("The original design is made by Muntasir_Billah from \n figma: https://www.figma.com/@itsmuntasirb")
