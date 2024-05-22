@@ -1,0 +1,85 @@
+* {
+    font-family: "Inter", sans-serif;
+}
+
+:root {
+    --chall_green: rgb(65, 180, 65);
+}
+
+body {
+    /* border: 1px solid black; */
+    margin: 0;
+    padding: 0 10%;
+    
+}
+
+/* || Main */
+main {
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 6% 20%;  
+    text-align: center;
+}
+
+main :is(h1, h2, h3, h4, h5, h6) {
+    margin: 2% 0;
+}
+
+main h2, main h4:last-of-type, main a {
+    color: grey;
+    font-weight: normal;
+}
+
+main h1 {
+    font-size: 3rem;
+}
+
+main h2 {
+    font-size: 1.3rem;
+}
+
+main h4 {
+    color: var(--chall_green) ;
+}
+
+/* || Main Form*/
+form {
+    display: flex;
+    gap: 20px;
+    padding-top: 4%;
+}
+
+form h4 {
+    display: block;
+}
+
+form input, form button {
+    padding: 15px;
+    border-radius: 5px;
+}
+
+form input::placeholder, form button {
+    font-size: 1rem;
+    /* font-weight: bold; */
+}
+
+form input {
+    border: 1px solid gray;
+    width: 20dvw;
+}
+
+form input::placeholder {
+    color: rgb(125, 144, 146);
+}
+
+form button {
+    border: none;
+    background-color: var(--chall_green);
+    color: white;
+}
+
+@media screen {
+    
+}
