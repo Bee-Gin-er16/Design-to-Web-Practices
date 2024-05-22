@@ -9,7 +9,7 @@
 body {
     /* border: 1px solid black; */
     margin: 0;
-    padding: 0 10%;
+    padding: 0 5%;
     
 }
 
@@ -27,7 +27,7 @@ main :is(h1, h2, h3, h4, h5, h6) {
     margin: 2% 0;
 }
 
-main h2, main h4:last-of-type, main a {
+main h2, main form h4, main a {
     color: grey;
     font-weight: normal;
 }
@@ -46,9 +46,12 @@ main h4 {
 
 /* || Main Form*/
 form {
-    display: flex;
-    gap: 20px;
-    padding-top: 4%;
+    display: grid;
+    grid-template-columns: 1.5fr 0.5fr;
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 0px;
+    padding-top: 3%;
 }
 
 form h4 {
@@ -78,6 +81,89 @@ form button {
     border: none;
     background-color: var(--chall_green);
     color: white;
+}
+
+/* || Section Form*/
+section :is(h1, h2, h3, h4, h5, h6) {
+    margin: 0;
+}
+
+section#bottom {
+    /* border: 1px solid green; */
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 5%;
+}
+
+section h2:first-child{
+    flex: 0 0 auto;
+}
+
+section.articles {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 3%;
+    padding: 3% 0 0;
+}
+
+/* || Section articles*/
+article.main, aside{
+    width: 50%;
+}
+
+article.main ,article section.article_desc, aside, .aside_article_desc {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+
+article.main, article section.article_desc, .aside_article_desc {
+    align-items: start;
+    gap: 10px;
+}
+
+article img {
+    width: 100%;
+    height: 250px;
+    background-color: gray;
+}
+
+article h4 {
+    color: var(--chall_green);
+    margin: 2% 0;
+}
+
+article h3 {
+    color: grey;
+    font-weight: normal;
+}
+
+article section.tags {
+    display: flex;
+    padding: 3%;
+    gap: 30px;
+}
+
+/* || Aside */
+aside {
+    gap: 60px;
+}
+
+aside img {
+    width: 50%;
+    height: 210px;
+    background-color: grey;
+}
+
+article.aside_article {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.aside_article_desc h3{
+    width: 90%;
 }
 
 @media screen {
