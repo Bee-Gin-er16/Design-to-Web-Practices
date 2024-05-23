@@ -137,12 +137,42 @@ article h4 {
 article h3 {
     color: grey;
     font-weight: normal;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
 }
 
 article section.tags {
     display: flex;
-    padding: 3%;
-    gap: 30px;
+    padding: 3% 0;
+    gap: 10px;
+}
+
+.tag_des {
+    padding: 5px 10px;
+    border-radius: 20px;
+}
+
+.tag_pink {
+    background-color: rgb(239, 214, 239);
+    color: rgb(189, 70, 145);
+}
+
+.tag_blue {
+    background-color: rgb(216, 240, 249);
+    color: rgb(69, 95, 174);
+}
+
+.tag_purple {
+    background-color: rgb(224, 202, 238);
+    color: rgb(167, 70, 189);
+}
+
+.tag_green {
+    background-color: rgb(212, 245, 227);
+    color: rgb(59, 157, 123);
 }
 
 /* || Aside */
@@ -162,8 +192,14 @@ article.aside_article {
     gap: 30px;
 }
 
+
 .aside_article_desc h3{
     width: 90%;
+    /* overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical; */
 }
 
 @media screen {
