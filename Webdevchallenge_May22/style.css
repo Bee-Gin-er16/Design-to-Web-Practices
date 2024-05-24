@@ -132,6 +132,7 @@ article img {
 article h4 {
     color: var(--chall_green);
     margin: 2% 0;
+    font-weight: bold;
 }
 
 article h3 {
