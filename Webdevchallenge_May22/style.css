@@ -10,7 +10,6 @@ body {
     /* border: 1px solid black; */
     margin: 0;
     padding: 0 5%;
-    
 }
 
 /* || Main */
@@ -55,7 +54,7 @@ form {
 }
 
 form h4 {
-    display: block;
+    grid-area: 2 / 1 / 3 / 3;
 }
 
 form input, form button {
@@ -203,10 +202,16 @@ article.aside_article {
     -webkit-box-orient: vertical; */
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1080px) {
+
     body {
         padding: 0 0;
     }
+
+    form input {
+        width: unset;
+    }
+
     #bottom, section.articles, article.aside_article {
         flex-direction: column;
         align-items: center;
@@ -221,3 +226,6 @@ article.aside_article {
         width: 70%;
     }
 }
+
+
+
