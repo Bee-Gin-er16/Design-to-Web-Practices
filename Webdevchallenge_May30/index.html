@@ -3,27 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
     <title>Login Page</title>
 </head>
 <body>
     <section class="hero_img">
-        <h1>img here</h1>
-        <img src="" alt="guy_sipping_coffee_happy">
+        <img src="https://i.ibb.co/xSVTVkJ/login-image.png" alt="guy_sipping_coffee_happy">
     </section>
     <section class="hero_form">
-        <h1>Welcome back <span>hi emoji</span></h1>
+        <h1>Welcome back 👋</h1>
         <h2>HydroUI gives you the blocks and components you need to create professional websites.</h2>
-        <button><span>google logo</span>Sign in with Google</button>
+        <button class="google">
+            <iconify-icon icon="flat-color-icons:google" width="1.5rem" height="1.3rem" class="mr-2"></iconify-icon>
+            Sign in with Google
+        </button>
         <form class="login_form" action="javascript:void(0);">
-            <label for="Email_Address">Email address</label>
+            <label for="Email_Address">Email address:</label>
             <input type="email" placeholder="Johnwebdevdaily.com">
-            <label for="Password">Password</label>
+            <label for="Password">Password:</label>
             <input type="password" placeholder="**********">
-            <label for="Remember_Me">
-                <input type="checkbox" name="remember_me" value="no"> 
+            <label class="remember_me" for="Remember_Me">
+                <input class="custom_check" type="checkbox" name="remember_me" value="no"> 
                 <span>Remember me</span>
             </label>
-            <button>Login</button>
+            <button class="login">Login</button>
             <label for="create_account">
                 Don't have an account?
                 <a href="javascript:void(0);">Create an account</a>
