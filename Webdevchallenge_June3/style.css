@@ -12,24 +12,19 @@ body {
     height: 100vh;
 }
 
-h1 {
-    font-size: 2em;
-}
-
 section.card {
     /* border: 1px solid blue; */
     box-shadow: 0px 0.5px gray;
-    border-radius: 20px;
+    border-radius: 10px;
     background-image: url('https://images.unsplash.com/photo-1551703599-6b3e8379aa8c?q=80&w=1773&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
     background-size: 100% 40%;
-    /* background-position: center; */
     background-repeat: no-repeat;
-    padding: 10% 0 0;
+    padding: 5% 0 0;
 }
 
 article {
     border: 1px solid white;
-    max-width: 30dvw;
+    max-width: 380px;
     display: flex;
     flex-direction: column;
     background-color: rgb(250, 250, 250);
@@ -41,8 +36,8 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: end;
-    margin-top: -8dvh;
-    z-index: 1;
+    margin-top: -6vh;
+    /* z-index: 1; */
     padding-bottom: 5%;
 }
 
@@ -65,13 +60,23 @@ section.title {
 main {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    /* gap: 0px; */
+}
+
+h2 {
+    font-size: 1.2rem;
+}
+
+h3 {
+    font-weight: normal;
+    font-size: 1rem;
 }
 
 main p {
-    padding-bottom: 5%;
+    padding: 5% 0;
+    font-size: 1.3rem;
     display: -webkit-box;
-    -webkit-line-clamp: 3;
+    -webkit-line-clamp: 7;
 }
 
 button {
@@ -83,6 +88,7 @@ button {
     font-weight: bold;
     font-size: 1rem;
 }
-/* article p {
+
+@media screen {
     
-} */
+}
