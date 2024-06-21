@@ -11,7 +11,7 @@ body {
 
 /*TRANSACTION CARD*/
 .transaction_card {
-    background-color: white;
+    background-color: rgb(238, 236, 236);
     /* padding: 5%; */
     border-collapse: collapse;
     border-radius: 10px;
@@ -60,9 +60,22 @@ tr {
     padding: 2%;
 }
 
+tr:hover {
+    background-color: white;
+}
+
 td.payment_type, td.amount {
     display: flex;
     flex-direction: column;
+}
+
+td.payment_type {
+    margin-left: 3dvw;
+}
+
+td.platform, td.amount {
+    text-align: left;
+    margin-left: 5dvw;
 }
 
 label, .transaction_status, .platform{
@@ -126,5 +139,22 @@ table label, .platform {
     background-color: rgb(216, 75, 75); 
 }
 
+.action-dots {
+    cursor: pointer;
+    display: flex;
+    justify-content: end;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
 
+.action-dots::after {
+    content: '...';
+    font-size: 24px; 
+}
 
+@media screen and (max-width: 1000px) {
+    .action-dots {
+        justify-content: center;
+    }
+}
