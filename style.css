@@ -10,6 +10,7 @@ body {
     margin: 0;
 }
 
+/*Aside start*/
 aside {
     width: 20%;
     padding: 5%;
@@ -20,7 +21,9 @@ aside {
 nav ul li {
     margin: 5% 0 0;
 }
+/*Aside end*/
 
+/*Main start*/
 main {
     width: 70%;
     margin: 5% 0 5% 5%;
@@ -41,17 +44,24 @@ section {
 
 article {
     padding: 2%;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     width: fit-content;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    /* align-items: center; */
 }
 
-.title .description {
+article a {
+    font-size: 1.3rem;
+    color: green;
+    margin-bottom: 2%;
+}
+
+/* .title .description {
     display: flex;
 }
 
 .description {
     flex-direction: column;
-} 
+} */
+/*Main start*/
