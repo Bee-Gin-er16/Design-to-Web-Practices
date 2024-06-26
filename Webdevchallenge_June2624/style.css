@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: rgb(107, 131, 152);
+}
+
+.main_card {
+    background-color: white;
+    margin: 3% 15%;
+    padding: 3% 10%;
+    box-shadow: 1px 1px 5px gray;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title h2 {
+    max-width: 50%;
+    margin-top: 2%;
+    text-align: center;
+}
+
+.title h5 {
+    color: rgb(200, 74, 86);
+    font-weight: bold;
+}
+
+.contents {
+    margin-top: 5%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+}
+
+footer a {
+    font-weight: bolder;
+    color: rgb(154, 42, 210);
+    text-decoration: none;
+}
