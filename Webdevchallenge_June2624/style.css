@@ -39,7 +39,7 @@ body {
     margin-top: 5%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     grid-column-gap: 0px;
     grid-row-gap: 0px;
 }
@@ -53,4 +53,19 @@ footer a {
     font-weight: bolder;
     color: rgb(154, 42, 210);
     text-decoration: none;
+}
+
+.tall img {
+    width: 80%;
+    height: 40dvh;
+} 
+
+.small img {
+    width: inherit;
+    height: 30dvh;
+}
+
+article h4 {
+    font-weight: bold;
+    color: gray;
 }
