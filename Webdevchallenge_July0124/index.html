@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet"  type='text/css'>
+    <link rel="stylesheet" href="./style.css">
+    <title>Tailwind Demo</title>
+</head>
+<body class="bg-slate-900">
+    <main class="rounded-lg bg-white">
+        <h1 id="receipt_title" class="text-black-50">Order Details:</h1>
+
+        <header class="flex flex-row pb-3 text-slate-500 font-medium">
+            <h2 class="font-bold" >Total Items:</h2>
+            <h2 class="font-bold" >2 Items</h2>
+        </header>
+
+        <div id="purchased_product" class="container border rounded-lg border-black p-4 mb-3">
+            <img class="rounded-lg" 
+            src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSP9J8K0giJ-VO9yEA5QKEuHfeKfpcn-6wYECvr2XJvamKi8TTO" 
+            alt="airpods">
+            <div class="product_desc">
+                <h2 class="font-bold">Apple AirPods Pro</h2>
+                <h2>$229</h2>
+            </div>
+            <i class="fas fa-solid fa-x"></i>
+        </div>
+        <div id="purchased_product" class="container border rounded-lg border-black p-4 mb-3">
+            <img class="rounded-lg" src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSP9J8K0giJ-VO9yEA5QKEuHfeKfpcn-6wYECvr2XJvamKi8TTO" 
+            alt="airpods">
+            <div class="product_desc">
+                <h2 class="font-bold">Apple AirPods Pro</h2>
+                <h2>$229</h2>
+            </div>
+            <i class="fas fa-solid fa-x"></i>
+        </div>
+
+        <div id="total" class="flex flex-row pt-2 pb-2">
+            <h2>Shipping</h2>
+            <h2 class="text-green-500 font-bold" >$9.99</h2>
+        </div>
+        <hr class="mt-2 mb-2 w-full">
+        <div id="checkout" class="flex flex-row pt-2 pb-2">
+            <h1>Total Price</h1>
+            <h1 class="font-bold" >$467.99</h1>
+        </div>
+
+        <button class="bg-blue-600 p-3 rounded-lg text-center text-white">Proceed to Checkout</button>
+    </main>
+    
+</body>
+<script src="https://cdn.tailwindcss.com"></script>
+</html>
