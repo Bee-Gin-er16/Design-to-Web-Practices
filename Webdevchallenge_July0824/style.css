@@ -14,10 +14,24 @@ main {
 }
 
 section#card {
+    display: flex;
     width: 70%;
-    height: 50%;
+    padding: 6% 5%;
+    height: fit-content;
 }
 
 section section, section img{
-    border: 1px solid red;
+    flex: 1;
+    height: fit-content;
+}
+
+@media screen and (max-width: 1024px) {
+
+    section#card {
+        flex-direction: column;
+        gap: 1.25rem;
+        height: fit-content;
+        padding: 10%;
+    }
+    
 }
