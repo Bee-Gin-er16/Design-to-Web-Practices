@@ -20,17 +20,16 @@ section#card {
     height: fit-content;
 }
 
-section section, section img{
+/* section section {
     flex: 1;
     height: fit-content;
-}
+} */
 
 @media screen and (max-width: 1024px) {
 
     section#card {
         flex-direction: column;
         gap: 1.25rem;
-        height: fit-content;
         padding: 10%;
     }
     
