@@ -4,16 +4,49 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-#catcher {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
 nav {
     justify-content: space-around;
 }
 
 #nav_pages {
     gap: 30px;
+}
+
+main {
+    position: relative;
+    background: url(https://media.istockphoto.com/id/1410270664/photo/modern-style-office-with-exposed-concrete-floor-and-a-lot-of-plants.jpg?s=612x612&w=0&k=20&c=lBivR3vIWH4dnb6MUNkQtQsIisaUEnzl2f6Ozyr-Jis=);
+    background-size: cover; 
+    background-position: center; 
+    height: 76dvh; 
+    z-index: 0;
+    overflow-x: hidden;
+}
+
+main::before {
+    content: "";
+    position: absolute;
+    border-radius: 10px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7); 
+    z-index: 1; 
+}
+
+main header, main #catcher, main #cta, main #par{
+    position: relative;
+    z-index: 2;
+}
+
+#catcher {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#cta, #par {
+    /* width: 800px; */
+    display: flex;
+    justify-content: center;
 }
