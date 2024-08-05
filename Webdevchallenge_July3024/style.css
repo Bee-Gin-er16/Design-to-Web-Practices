@@ -5,10 +5,25 @@
 }
 
 main {
-    height: 100vh;
+    height: fit-content;
 }
 
+#recipe-card {
+    width: 30%;
+    height: 80%;
+}
 
 .clip-circle {
     clip-path: circle(50%);
+}
+
+#bottom #desc p {
+    display: block;
+    overflow: hidden; 
+    text-overflow: ellipsis;
+    height: 3rem;
+}
+
+#carousel {
+    overflow:visible
 }
