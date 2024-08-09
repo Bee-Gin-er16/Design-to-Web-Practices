@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>Login Mobile</title>
+</head>
+<body class="bg-zinc-900 flex justify-center">
+    <main class="bg-neutral-200 w-1/4 rounded-lg p-7 flex flex-col items-start gap-y-2">
+        <i>AngularSystems</i>
+        <h1>Admin Login</h1>
+        <h2>Welcome back. Enter your credentials to access your account</h2>
+        <form action="javascript:void(0)" class="w-full flex flex-col gap-y-3">
+            <label for="Email">Email:</label>
+            <input type="email" name="email" id="email" class="rounded-sm p-1">
+            <div id="forgot_pass_cta" class="flex justify-between">
+                <label for="Password">Password:</label>
+                <a href="jvascript:void(0)" class="text-emerald-700 font-bold">Forgot Password?</a>
+            </div>
+            <input type="password" name="password" id="password" class="rounded-sm p-1">
+            <div id="sign_radio" class="flex gap-x-3 py-2 pl-1">
+                <input type="checkbox" name="sign" id="sign" checked class="scale-150 checked:bg-emerald-700">
+                <label for="sign">Keep me signed in</label>
+            </div>
+            <button class="button rounded-lg text-white bg-emerald-700 p-3 hover:bg-white hover:text-black">Continue</button>
+            <div id="alt_sign" class="flex flex-col items-center">
+                <h2>or sign up with</h2>
+                <div id="soc_cta" class="flex gap-x-2">
+                    <button>Google</button>
+                    <button>Apple</button>
+                    <button>Facebook</button>
+                </div>
+                <div id="reg_cta" class="flex gap-x-2">
+                    <h2>Don't have an account?</h2>
+                    <a href="javascript:void:(0)" class="font-bold text-emerald-700">Sign up</a>
+                </div>
+            </div>
+        </form>
+    </main>
+</body>
+<script src="https://cdn.tailwindcss.com">
+    const pass = document.getElementById("password");
+</script>
+</html>
