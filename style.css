@@ -14,8 +14,16 @@ body {
 aside {
     width: 20%;
     padding: 5%;
-    height: 80vh;
-    border-right: 1px solid gray;
+    height: fit-content;
+    position: sticky;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 nav ul li {
@@ -26,11 +34,12 @@ nav ul li {
 /*Main start*/
 main {
     width: 70%;
-    margin: 5% 0 5% 5%;
+    padding: 5% 0 5% 5%;
     flex: 1;
     overflow: hidden;
     display: flex;
     flex-direction: column;
+    border-left: 1px solid gray;
 }
 
 .scrollable {
@@ -40,12 +49,13 @@ main {
 
 section {
     /* padding: 0 5% 5%; */
-    padding: 0 1rem 2rem;
-    
+    margin: 0 5rem 0 0;
+    border: 1px solid blue
 }
 
 .article-collect {
-    padding: 1rem;
+    border: 1px solid greenyellow;
+    padding: 2rem;
     display: flex;
     flex-wrap: wrap;
     gap: 2rem;
@@ -55,7 +65,7 @@ section {
     padding: 1rem;
     border: 1px solid red;
     border-radius: 1rem;
-    width: 10rem;
+    width: 15rem;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -63,10 +73,13 @@ section {
     box-sizing: border-box;
 }
 
+a#author {
+    color: rgb(64, 74, 184);
+}
+
 article a {
     font-size: 1.3rem;
     color: green;
-    margin-bottom: 2%;
 }
 
 /* .title .description {
