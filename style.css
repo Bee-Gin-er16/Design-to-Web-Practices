@@ -6,20 +6,21 @@
 
 body {
     display: flex;
+    flex-direction: column;
     height: 100%;
     margin: 0;
 }
 
 /*Aside start*/
 aside {
-    width: 56rem;
-    padding: 5%;
+    width: 52rem;
+    padding: 0 5rem;
     height: fit-content;
     position: sticky;
 }
 
 iframe {
-    width: inherit;
+    width: 480px;
     height: 30rem;
     border: 1px solid black;
     border-radius: 1rem;
@@ -41,39 +42,28 @@ nav ul li {
 
 /*Main start*/
 main {
-    width: 70%;
-    padding: 5% 0 5% 5%;
+    /* width: 34rem; */
+    padding: 3% 0 5% 5%;
     flex: 1;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     border-left: 1px solid gray;
 }
 
-.scrollable {
-    overflow-y: auto;
-    flex: 1;
-}
-
-section {
-    /* padding: 0 5% 5%; */
-    margin: 0 5rem 0 0;
-    border: 1px solid blue
-}
-
 .article-collect {
-    border: 1px solid greenyellow;
+    /* border: 1px solid greenyellow; */
     padding: 2rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 2rem;
+    gap: 1rem;
 }
 
 .card {
     padding: 1rem;
     border: 1px solid gray;
     border-radius: 1rem;
-    width: 15rem;
+    width: 10rem;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -86,6 +76,7 @@ section {
     /* background-color: rgb(218, 238, 217); */
     border: 2px solid rgb(76, 176, 99);
     box-shadow: 4px 4px rgb(76, 176, 99);
+    /* flex: 1; */
     transition: box-shadow .3s ease;
 }
 

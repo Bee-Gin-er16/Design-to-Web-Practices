@@ -1,0 +1,13 @@
+#parent-container {
+    position: relative;
+    width: 500px; /* Adjust to your needs */
+    height: 500px; /* Adjust to your needs */
+    border: 1px solid #ccc;
+  }
+  
+  #iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    cursor: grab;
+  }
