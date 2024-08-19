@@ -10,7 +10,7 @@ body {
 
 main {
     width: 100%;
-    height: 100dvh;
+    height: 100vh;
 }
 
 section#card {
@@ -25,12 +25,37 @@ section#card {
     height: fit-content;
 } */
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1280px) {
+    main {
+        height: fit-content;
+    }
 
     section#card {
         flex-direction: column;
         gap: 1.25rem;
-        padding: 10%;
+        width: fit-content;
+        align-items: center;
+        /* padding: 10%; */
+    }
+
+    #first {
+       align-items: center;
+       width: 30rem;
+       text-align: center;
+    }
+
+    #first h4, #first h3{
+        width: 25rem;
+    }
+
+    #second {
+        width: 25rem;
+        
+    }
+
+    #second img {
+        width: inherit;
+        height: 24rem;
     }
     
 }
