@@ -7,30 +7,34 @@
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
-<body class="bg-zinc-600 flex justify-center items-center">
-    <main id="course_card" class="bg-white m-24 p-6 w-1/4 rounded-lg">
+<body class="bg-zinc-600 flex justify-center items-center font-['Arial']">
+    <main id="course_card" class="bg-white m-24 xl:w-1/4 lg:w-1/3 md:w-1/3 sm:w-1/2 rounded-lg">
 
-        <img src="" alt="course-image">
-        <div id="course_section">
-            <div id="course_tags" class="flex gap-x-3">
-                <h3>UX Design</h3>
-                <h3>Product Design</h3>
-                <h3>Prototyping</h3>
-                <!-- <h3>UX Design</h3>
-                <h3>UX Design</h3>
-                <h3>UX Design</h3> -->
+        <img class="h-40 w-full rounded-tr-lg rounded-tl-lg" src="https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="course-image">
+        <div id="course_section" class="px-6 py-6">
+            <div id="course_tags" class="flex flex-wrap py-3 gap-y-3 gap-x-3">
+                <h3 class="p-2 border border-1 bg-slate-200 text-xs rounded-lg" >UX Design</h3>
+                <h3 class="p-2 border border-1 bg-slate-200 text-xs rounded-lg" >Product Design</h3>
+                <h3 class="p-2 border border-1 bg-slate-200 text-xs rounded-lg" >Prototyping</h3>
+                <h3 class="p-2 border border-1 bg-slate-200 text-xs rounded-lg" >+3</h3>
             </div>
-            <h1 id="title">Intro to Product Design</h1>
-            <h2 id="duration">6-8 Week Course</h2>
-            <p id="course_desc">
+            <h1 id="title" class="text-xl font-bold">Intro to Product Design</h1>
+            <h2 id="duration" class="text-blue-400 ">6-8 Week Course</h2>
+            <p id="course_desc" class="text-lg">
                 Discover the essentials of product in this introductory course. Learn how to turn ideas into reality by understanding the fundamentals of user-centered design, prototyping a...
             </p>
-            <div id="course_enrollees">
+            <div id="course_enrollees" class="flex flex-wrap items-center text-gray-600 py-3 gap-x-3">
+                <div id="enrolled" class="flex gap-x-1">
+                    <img class="w-8 h-8 rounded-full border border-1 border-slate-100" src="https://images.pexels.com/photos/8297158/pexels-photo-8297158.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="profiles">
+                    <img class="w-8 h-8 rounded-full border border-1 border-slate-100" src="https://images.pexels.com/photos/8074612/pexels-photo-8074612.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="profile">
+                    <img class="w-8 h-8 rounded-full border border-1 border-slate-100" src="https://images.pexels.com/photos/3779760/pexels-photo-3779760.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="profile">
+                    <img class="w-8 h-8 rounded-full border border-1 border-slate-100" src="https://images.pexels.com/photos/3791185/pexels-photo-3791185.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="profile">
+                </div>
                 <h3>Join 956+ Members</h3>
             </div>
-            <div id="course_cta" class="flex justify-center items-center pt-3 gap-x-5">
+            <div id="course_cta" class="flex flex-1 justify-center items-center pt-3 gap-x-5">
                 <i class="bi bi-heart text-2xl"></i>
-                <button class="bg-blue-500 font-bold text-white rounded-lg p-3 w-3/4">Apply Now</button>
+                <button class="bg-blue-500 hover:bg-blue-700 font-bold text-white rounded-lg p-3 w-3/4">Apply Now</button>
             </div>
 
         </div>
