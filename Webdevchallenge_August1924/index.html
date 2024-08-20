@@ -7,20 +7,24 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <title>Pricing Table</title>
 </head>
-<body>
+<body class="bg-slate-200">
     <section id="desc" class="pt-12 px-24 flex flex-col items-center text-center">
-        <h1 class="average">Pricing & Plans</h1>
+        <h1 class="average font-bold">Pricing & Plans</h1>
         <p>With lots of unique blocks. you can easily build a page without coding. Build you next landing page.</p>
         <div id="radio" class="pt-5 flex items-center gap-x-3">
             <label for="monthly">Monthly</label>
-            <input type="radio" name="radio" id="radio">
+            <label class="switch">
+                <input type="checkbox">
+                <span class="slider round"></span>
+            </label>
             <label for="yearly">Yearly</label>
-            Save 25%
+            <h1 class="text-purple-600 font-bold border border-1 px-3 py-1 bg-slate-300 rounded-full">Save 25%</h1>
         </div>
     </section>
     <main id="plans" class="py-10 flex flex-wrap gap-5 justify-center">
+
         <div id="plan_card" class="border border-1 border-gray-200 rounded rounded-lg w-80 p-5 px-8 flex flex-col gap-y-1">
-            <h2 class="medium">STARTER</h2>
+            <h2 class="medium text-purple-600 font-bold">STARTER</h2>
             <h1 class="average">$<b>19</b> /month</h1>
             <h3 class="small">billed monthly</h3>
             <div id="perks_list" class="py-2">
@@ -52,8 +56,8 @@
             <h3 class="small">No credit card required</h3>
         </div>
         <div id="plan_card" class="border border-1 border-gray-200 rounded rounded-lg w-80 p-5 px-8 flex flex-col gap-y-1">
-            <h2 class="medium">STARTER</h2>
-            <h1 class="average">$<b>19</b> /month</h1>
+            <h2 class="medium text-purple-600 font-bold">STANDARD</h2>
+            <h1 class="average">$<b>49</b> /month</h1>
             <h3 class="small">billed monthly</h3>
             <div id="perks_list" class="py-2">
                 <div id="perk">
@@ -69,7 +73,7 @@
                     <h2 class="medium">01 Domain Support</h2>
                 </div>
                 <div id="perk">
-                    <i class="bi-x"></i>
+                    <i class="bi-check"></i>
                     <h2 class="medium">6 Month Premium Support</h2>
                 </div>
                 <div id="perk">
@@ -84,8 +88,8 @@
             <h3 class="small">No credit card required</h3>
         </div>
         <div id="plan_card" class="border border-1 border-gray-200 rounded rounded-lg w-80 p-5 px-8 flex flex-col gap-y-1">
-            <h2 class="medium">STARTER</h2>
-            <h1 class="average">$<b>19</b> /month</h1>
+            <h2 class="medium text-purple-600 font-bold">PREMIUM</h2>
+            <h1 class="average">$<b>99</b> /month</h1>
             <h3 class="small">billed monthly</h3>
             <div id="perks_list" class="py-2">
                 <div id="perk">
@@ -101,11 +105,11 @@
                     <h2 class="medium">01 Domain Support</h2>
                 </div>
                 <div id="perk">
-                    <i class="bi-x"></i>
+                    <i class="bi-check"></i>
                     <h2 class="medium">6 Month Premium Support</h2>
                 </div>
                 <div id="perk">
-                    <i class="bi-x"></i>
+                    <i class="bi-check"></i>
                     <h2 class="medium">Lifetime Updates</h2>
                 </div>
             </div>
@@ -115,6 +119,7 @@
             </button>
             <h3 class="small">No credit card required</h3>
         </div>
+
     </main>
 </body>
 <script src="https://cdn.tailwindcss.com"> 
