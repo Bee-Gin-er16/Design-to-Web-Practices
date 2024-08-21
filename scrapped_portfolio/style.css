@@ -12,19 +12,44 @@ body {
 }
 
 /*Aside start*/
-aside {
-    width: 52rem;
+#screen {
+    /* width: 52rem; */
     padding: 0 5rem;
-    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    /* height: fit-content; */
     position: sticky;
 }
 
 iframe {
-    width: inherit;
-    height: 30rem;
+    /* width: inherit;
+    height: 30rem; */
     border: 1px solid black;
     border-radius: 1rem;
     margin: 2rem 0;
+}
+
+#mobile {
+    width: 480px;
+    height: 320px;
+}
+
+#ipad {
+    width: 768px;
+    height: 481px;
+}
+
+#sm-lap {
+    width: 1024px;
+    height: 769px;
+}
+
+#large {
+    width: 1200px;
+    height: 1025px;
 }
 
 a {

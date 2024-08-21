@@ -1,0 +1,79 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-wrap: wrap;
+    /* overflow-y: hidden; */
+}
+
+#credentials {
+    display: flex;
+    flex-direction: column;
+    padding: 5rem;
+    gap: 1.5rem;
+    position: -webkit-sticky;
+    position: sticky;
+}
+
+#icon-word {
+    display: flex;
+    gap: 1rem;
+}
+
+#contacts, #socials {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    font-size: larger;
+}
+
+#featured {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 5rem 0;
+    /* border: 1px solid red; */
+    /* width: fit-content; */
+    max-width: 50rem;
+    /* max-height: 60rem; */
+}
+
+#featured_collection {
+    display: flex;
+    flex-direction: row;
+    /* border: 1px solid red; */
+    gap: inherit;
+    flex-wrap: wrap;
+    overflow-y: auto;
+}
+
+#project {
+    padding: 1rem;
+    /* background-color: bisque; */
+    border-radius: 1rem;
+    max-width: 60rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+#project img{
+    width: 300px;
+    height: 200px;
+    object-fit: fill;
+    display: block;
+}
+
+#project #desc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
