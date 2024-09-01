@@ -12,7 +12,7 @@
 body {
     display: flex;
     flex-wrap: wrap;
-    background-color: rgb(244, 240, 229);
+    background-color: rgb(245, 244, 243);
     /* justify-content: center; */
     /* overflow-y: hidden; */
 }
