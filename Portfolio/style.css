@@ -82,8 +82,6 @@ body {
 
 #project {
     padding: 1rem;
-    /* background-color: bisque; */
-    /* border: 2px solid rgba(117, 12, 47, 0.992); */
     box-shadow: 1px 5px 22px grey;
     border-radius: 1rem;
     max-width: 60rem;
@@ -92,7 +90,7 @@ body {
     flex-direction: column;
     align-items: center;
     flex-wrap: wrap;
-    gap: 1rem;
+    gap: 2rem;
 
     &:hover {
         box-shadow: 1px 5px 22px rgba(117, 12, 47, 0.992);
@@ -141,18 +139,30 @@ body {
         flex-wrap: wrap;
     }
 
-    #project {
+    #skills {
         padding: 1rem;
-        /* background-color: bisque; */
-        /* border: 2px solid rgba(117, 12, 47, 0.992); */
-        box-shadow: 1px 5px 22px rgb(244, 240, 229);
         border-radius: 1rem;
         max-width: 60rem;
         display: flex;
         flex-direction: column;
         align-items: center;
         flex-wrap: wrap;
-        gap: 1rem;
+        gap: 2rem;
+    }
+
+    img {
+        width: 200px;
+        height: 200px;
+        object-fit: fill;
+        display: block;
+        border-radius: 1rem;
+    }
+
+    #desc {
+        display: flex;
+        flex-direction: column;
+        gap: .5rem;
+        align-items: center;
     }
 
 }
