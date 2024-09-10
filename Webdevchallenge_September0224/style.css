@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    background-image: 
+    linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+    url(https://images.pexels.com/photos/6943662/pexels-photo-6943662.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#icon {
+    padding: 1rem;
+    color: black;
+    /* font-size: medium; */
+    border-radius: 50%;
+}
+
+
+#sched_item:first-child #icon {
+    background-color: rgb(0, 255, 136);
+}
+
+#sched_item:nth-child(2) #icon {
+    background-color: aqua;
+}
