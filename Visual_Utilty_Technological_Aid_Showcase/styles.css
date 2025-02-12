@@ -34,11 +34,12 @@ nav ul li:hover{
 }
 
 .hero_section{
-    height: fit-content;
+    height: 100%;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     padding: 10dvh 0;
+    margin: 0 0 0 0;
     /* background: rgb(39, 45, 46);
     background: linear-gradient(0deg, rgb(81, 95, 96) 0%, rgba(213,219,219,1) 52%, rgb(81, 95, 96) 100%); */
     background: rgb(81,95,96);
@@ -49,14 +50,14 @@ nav ul li:hover{
 .hero_card {
     /* border: var(--border_check1); */
     height: fit-content;
-    /* margin-top: 5dvh; */
-    max-width: 40%;
+    max-width: 45%;
     flex-wrap: wrap;
+    font-size: 1.3rem;
+    text-align: center;
 }
 
 .hero_card h1{
     font-weight: bolder;
-    font-size: xxx-large;
     margin-bottom: 0;
 }
 
@@ -65,10 +66,8 @@ nav ul li:hover{
 }
 
 .hero_card p {
-    margin-top: 5%;
-    font-size: 25px;
+    margin-top: 3rem;
     text-align: left;
-    /* word-spacing: 12px; */
 }
 
 .hero_img {
@@ -76,15 +75,11 @@ nav ul li:hover{
     height: fit-content;
     object-fit: cover;
     filter: drop-shadow(60px 4px 4px rgba(0,0,0,0.5)) 
-    /* drop-shadow(-40px 0px 4px rgba(0,0,0,0.25)); */
-    /* -webkit-filter: drop-shadow(5px 5px 5px #666666);
-        filter: drop-shadow(5px 5px 5px #666666); */
 }
 
 .hero_img img{
-    width: 45dvw;
-    height: 700px;
-    
+    width: fit-content;
+    height: 82dvh;
     /* height: 80dvh; */
 }
 
