@@ -44,6 +44,14 @@ body {
     border-radius: 1rem;
 }
 
+#credentials #occupations {
+    width: 15rem;
+    object-fit: fill;
+    display: block;
+    text-align: center;
+    border-radius: 1rem;
+}
+
 #icon-word {
     display: flex;
     gap: 1rem;
