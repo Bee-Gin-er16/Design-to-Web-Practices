@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <title>Meditation UI</title>
+</head>
+<body class="bg-gray-200 flex justify-center items-center min-h-screen">
+    <main class="bg-white w-full max-w-sm px-4 pt-4 rounded-lg shadow-md">
+        <h3 class="text-center py-2">Silent Moon</h3>
+        <h1 class="font-bold text-lg">Good Morning, Afsar</h1>
+        <h2>We Wish you have a good day</h2>
+        <div id="row_container" class="py-4 flex justify-evenly gap-x-4 ">
+            <section id="basics_box" class="w-1/2 h-40 bg-violet-400 rounded-lg text-white">
+                <div class="flex justify-end pt-1 px-4">
+                    <img src="https://www.svgrepo.com/show/287301/lotus.svg" class="w-16 h-16" alt="bg1">
+                </div>
+                <div id="desc" class="px-4 flex flex-col gap-y-2">
+                    <div id="label">
+                        <h2 class="font-bold text-lg">Basics</h2>
+                        <h3 class="text-sm">Course</h3>
+                    </div>
+                    <div id="duration" class="font-bold flex justify-between items-center">
+                        <h3 class="text-sm">3-15 MIN</h3>
+                        <button class="text-xs text-gray-700 bg-white py-1 px-3 rounded-xl">START</button>
+                    </div>
+                </div>   
+            </section>
+            <section id="relaxation_box" class="w-1/2 h-40 bg-amber-200 rounded-lg text-gray-700">
+                <div class="flex justify-end pt-1 px-4">
+                    <img src="https://www.svgrepo.com/show/401910/headphone.svg" class="w-16 h-16" alt="bg1">
+                </div>
+                <div id="desc" class="px-4 flex flex-col gap-y-2">
+                    <div id="label">
+                        <h2 class="font-bold text-lg">Relaxation</h2>
+                        <h3 class="text-sm">Music</h3>
+                    </div>
+                    <div id="duration" class="font-bold flex justify-between items-center">
+                        <h3 class="text-sm">3-15 MIN</h3>
+                        <button class="text-xs text-white bg-gray-700 py-1 px-3 rounded-xl">START</button>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div id="thought_tab" class="px-8 py-4 flex justify-between bg-gray-500 text-white  rounded-lg items-center">
+            <div id="desc">
+                <h3 class="font-bold text-md">Daily Thought</h3>
+                <h4 class="text-sm">Meditation: 3-10 MIN</h4>
+            </div>
+            <i class="text-3xl bi bi-arrow-right-circle"></i>
+        </div>
+        <h2 class="font-bold text-lg py-4">Recommended for you</h2>
+        <div id="row_container" class="flex pb-4 justify-start gap-x-4 overflow-hidden">
+            <section class="flex flex-col"> 
+                <div id="img" class="w-32 h-20 bg-green-200 rounded-lg flex justify-center items-center">
+                    <img src="https://www.svgrepo.com/show/307943/meditate-in-nature-meditate-relaxation-mindfulness.svg" class="w-16 h-16" alt="bg1">
+                </div> 
+                <div id="desc">
+                    <h3 class="font-bold">Focus</h3>
+                    <h4 class="text-xs">Meditation</h4>
+                </div>
+            </section>
+            <section class="flex flex-col"> 
+                <div id="img" class="w-32 h-20 bg-amber-100 rounded-lg flex justify-center items-center">
+                    <img src="https://www.svgrepo.com/show/453129/listening-to-music.svg" class="w-16 h-16" alt="bg1">
+                </div> 
+                <div id="desc">
+                    <h3 class="font-bold">Happiness</h3>
+                    <h4 class="text-xs">Meditation</h4>
+                </div>
+            </section>
+            <section class="flex flex-col"> 
+                <div id="img" class="w-32 h-20 bg-green-200 rounded-lg flex justify-center items-center">
+                    <img src="https://www.svgrepo.com/show/307943/meditate-in-nature-meditate-relaxation-mindfulness.svg" class="w-16 h-16" alt="bg1">
+                </div> 
+                <div id="desc">
+                    <h3 class="font-bold">Focus</h3>
+                    <h4 class="text-xs">Meditation</h4>
+                </div>
+            </section>
+        </div>
+        <div id="menu" class="flex justify-around text-center">
+            <div id="option" class="flex flex-col p-2 rounded-xl hover:bg-violet-300 ">
+                <i id="icon" class="bi bi-house-door"></i>
+                <h3 id="menu_text" class="text-sm">Home</h3> 
+            </div>
+            <div id="option" class="flex flex-col p-2 rounded-xl hover:bg-violet-300 ">
+                <i class="bi bi-alarm"></i>
+                 <h3 id="menu_text" class="text-sm">Sleep</h3> 
+            </div>
+            <div id="option" class="flex flex-col p-2 rounded-xl hover:bg-violet-300 ">
+                <i id="icon" class="bi bi-person-arms-up"></i>
+                 <h3 id="menu_text" class="text-sm">Meditate</h3> 
+            </div>
+            <div id="option" class="flex flex-col p-2 rounded-xl hover:bg-violet-300 ">
+                <i id="icon" class="bi bi-music-note-beamed"></i>
+                 <h3 id="menu_text" class="text-sm">Music</h3> 
+            </div>
+            <div id="option" class="flex flex-col p-2 rounded-xl hover:bg-violet-300 ">
+                <i id="icon" class="bi bi-person"></i>
+                 <h3 id="menu_text" class="text-sm">Afsar</h3> 
+            </div>
+        </div>
+    </main>
+    
+</body>
+    <script src="https://cdn.tailwindcss.com"> </script>
+</html>
