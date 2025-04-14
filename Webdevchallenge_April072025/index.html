@@ -8,26 +8,49 @@
     <title>Newsletter Signup UI</title>
 </head>
 <body class="flex justify-center items-center min-h-screen bg-sky-50">
-    <main class="flex flex-col gap-y-4 max-w-sm w-full px-8 py-8 rounded-lg bg-white">
+    <main class="flex flex-col gap-y-5 max-w-md w-full px-8 py-8 rounded-lg bg-white">
         <h1 class="font-bold text-xl">Comments</h1>
         <div id="user_comment" class="border-2 border-sky-400 rounded-lg p-4">
-            <div id="profile" class="flex">John Doe</div>
-            <div id="textarea" class="text-stone-950">text here</div>
+            <div id="profile" class="flex items-center gap-x-2">
+                <img src="https://www.svgrepo.com/show/425249/users-avatar.svg" alt="john" class="w-8 h-8 rounded-2xl border-2 border-black">
+                <h1 class="font-bold">John Doe</h1>
+            </div>
+            <div id="textarea" class="py-4 text-stone-950">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti numquam dolore quo animi. Deleniti recusandae tempore totam quae error nesciunt?
+            </div>
             <hr>
             <div id="mod_text" class="flex justify-between items-center px-2 pt-2">
                 <div id="text_mod" class="flex justify-around gap-x-2">
-                    <h4>Bold</h4>
-                    <h4>Italic</h4>
-                    <h4>Link</h4>
+                    <button>
+                        <i class="text-2xl bi bi-type-bold"></i>
+                    </button>
+                    <button>
+                        <i class="text-2xl bi bi-type-italic"></i>
+                    </button>
+                    <button>
+                        <i class="text-2xl bi bi-link"></i>
+                    </button>
                 </div>
-                <button class="bg-blue-500 text-white px-3 py-2 rounded-xl">SUBMIT</button>
+                <button class="bg-blue-500 text-white text-sm px-5 py-2 rounded-lg font-bold">Comment</button>
             </div>
         </div>
         <div id="other_comment" class="rounded-lg">
-            <div id="profile" class="flex">Jane Doe</div>
-            <div id="textarea" class="text-gray-500">text here</div>
+            <div id="profile" class="flex items-center gap-x-2">
+                <img src="https://www.svgrepo.com/show/425248/users-avatar.svg" alt="john" class="w-8 h-8 rounded-2xl border-2 border-black">
+                <h1 class="font-bold">Jane Doe</h1>
+            </div>
+            <div id="textarea" class="py-4 text-stone-950">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti numquam dolore quo animi. Deleniti recusandae tempore totam quae error nesciunt?
+            </div>
+            <div id="comment_nav" class="flex gap-x-2 items-center">
+                <button id="up" class="rounded-2xl p-1 px-2 border-2 border-gray-400">
+                    <i class="bi bi-chevron-up"></i>
+                </button>
+                <button id="down" class="rounded-2xl p-1 px-2 border-2 border-gray-400">
+                    <i class="bi bi-chevron-down"></i>
+                </button>
+                <h2 class="text-gray-500 font-bold">5 mins ago</h2>
+            </div>
         </div>
-        <button class="w-full px-4 py-2 bg-gray-200">Load More</button>
+        <button class="w-full rounded-lg font-bold px-4 py-2 bg-gray-200">Load More</button>
     </main>
 </body>
 <script src="https://cdn.tailwindcss.com"> </script>
