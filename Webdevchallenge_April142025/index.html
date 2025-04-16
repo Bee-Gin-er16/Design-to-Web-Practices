@@ -12,6 +12,7 @@
 
     <main class="flex flex-col p-6 gap-y-4 max-w-sm w-full rounded-2xl border-4 border-gray-300 bg-white">
 
+        <!-- Top CTA -->
         <div id="appbar" class="flex gap-x-2 text-sm">
             <img src="" alt="home">
             <h3><span>Home,</span> Web. Daily NY 15A</h3>
@@ -19,50 +20,64 @@
         </div>
 
         <div id="maincta" class="flex flex-col gap-y-2">
-            <div id="slider" class="flex flex-col p-6 py-4 items-start w-full text-sm rounded-2xl gap-y-4 bg-orange-500">
-                <h1 class="text-white font-bold w-1/2">Get your 30% daily discount now</h1>
-                <button class="p-2 px-8 rounded-full font-bold bg-black text-xs text-white">Order Now</button>
+            <div id="slider"
+              class="relative flex flex-col p-6 py-4 items-start w-full text-sm rounded-2xl gap-y-4 bg-[url('https://images.pexels.com/photos/1639565/pexels-photo-1639565.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')] bg-cover bg-center before:content-[''] before:absolute before:inset-0 before:bg-orange-600/40 before:rounded-2xl before:z-0 text-white overflow-hidden"
+            >
+              <h1 class="relative z-10 font-bold w-1/2">Get your 30% daily discount now</h1>
+              <button class="relative z-10 p-2 px-8 rounded-full font-bold bg-black text-xs text-white">Order Now</button>
             </div>
+          
             <div id="slider_nav" class="flex justify-center">
-                <ul class="flex gap-x-6">
-                    <li>1</li>
-                    <li>1</li>
-                    <li>1</li>
-                    <li>1</li>
-                </ul>
+              <ul class="flex gap-x-2">
+                <li class="w-2 h-2 rounded-full bg-black"></li>
+                <li class="w-2 h-2 rounded-full bg-gray-300"></li>
+                <li class="w-2 h-2 rounded-full bg-gray-300"></li>
+                <li class="w-2 h-2 rounded-full bg-gray-300"></li>
+              </ul>
             </div>
+          </div>
+
+        <div id="topbar" class="flex justify-between items-center text-sm">
+            <h1 class="font-bold">Fastest Delivery <span>icon</span></h1>
+            <button class="text-sm p-1 px-4 bg-red-200 rounded-2xl font-bold text-orange-600">See all</button>
         </div>
 
-        <div id="fastest_delivery" class="flex flex-col gap-y-2">
-
-            <div id="topbar" class="flex justify-between text-sm">
-                <h1 class="font-bold">Fastest Delivery <span>icon</span></h1>
-                <button class="text-sm p-1 px-4 bg-orange-200 rounded-2xl text-orange-600">See all</button>
-            </div>
-            
-            <div id="food_list" class="flex gap-x-4 overflow-auto">
-                <div id="food_item" class="rounded-lg w-1/2 text-sm">
-                    <div id="food_img" class="px-2 py-6 flex justify-end items-end ">
-                        <h1 class="text-xs">$3.00 off delivery</h1>
+        <!-- Fastest Delivery -->
+        <div id="fastest_delivery">
+            <div id="food_list" class="flex flex-nowrap gap-x-4 overflow-auto">
+                <div id="food_item" class="rounded-lg min-w-[250px] flex-shrink-0 text-sm">
+                    <div id="food_img" class="pl-2 py-4 pt-12 flex justify-end items-end rounded-t-lg bg-[url('https://images.pexels.com/photos/1639565/pexels-photo-1639565.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')] bg-cover bg-center">
+                        <h1 class="text-xs text-white bg-orange-500 rounded-l-lg p-2 ">$3.00 off delivery</h1>
                     </div>
                     <div id="food_desc" class="flex flex-col p-2 px-4 items-start rounded-b-lg border-2 border-gray-300 border-t-0">
                         <h1 class="font-bold">Crazy Tacos</h1>
                         <h2>Delicious tacos with amazing flavors!</h2>
                     </div>
                 </div>
+                <div id="food_item" class="rounded-lg min-w-[250px] flex-shrink-0 text-sm">
+                    <div id="food_img" class="pl-2 py-4 pt-12 flex justify-end items-end rounded-t-lg bg-[url('https://images.pexels.com/photos/1639565/pexels-photo-1639565.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')] bg-cover bg-center">
+                        <h1 class="text-xs text-white bg-orange-500 rounded-l-lg p-2 ">$3.00 off delivery</h1>
+                    </div>
+                    <div id="food_desc" class="flex flex-col p-2 px-4 items-start rounded-b-lg border-2 border-gray-300 border-t-0">
+                        <h1 class="font-bold">Crazy Tacos</h1>
+                        <h2>Delicious tacos with amazing flavors!</h2>
+                    </div>
+                </div>
+                
             </div>
         </div>
 
-        <div id="popular_section" class="flex flex-col gap-y-2">
-            <div id="topbar" class="flex justify-between text-sm">
-                <h1 class="font-bold">Popular items <span>icon</span></h1>
-                <button class="text-sm p-1 px-4 bg-orange-200 rounded-2xl text-orange-600">See all</button>
-            </div>
-            
+        <div id="topbar" class="flex justify-between items-center text-sm">
+            <h1 class="font-bold">Popular items <span>icon</span></h1>
+            <button class="text-sm p-1 px-4 bg-red-200 rounded-2xl font-bold text-orange-600">See all</button>
+        </div>
+
+        <!-- Popular Items -->
+        <div id="popular_section">
             <div id="food_list" class="flex gap-x-4 overflow-auto">
-                <div id="food_item" class="rounded-lg w-1/2 text-sm">
-                    <div id="food_img" class="px-2 py-6 flex justify-end items-end ">
-                        <h1 class="text-xs">$3.00 off delivery</h1>
+                <div id="food_item" class="rounded-lg w-3/2 text-sm">
+                    <div id="food_img" class="pl-2 py-4 pt-12 flex justify-end items-end rounded-t-lg bg-[url('https://images.pexels.com/photos/1639565/pexels-photo-1639565.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')] bg-cover bg-center">
+                        <h1 class="text-xs text-white bg-orange-500 rounded-l-lg p-2 ">$3.00 off delivery</h1>
                     </div>
                     <div id="food_desc" class="flex flex-col p-2 px-4 items-start rounded-b-lg border-2 border-gray-300 border-t-0">
                         <h1 class="font-bold">Crazy Tacos</h1>
