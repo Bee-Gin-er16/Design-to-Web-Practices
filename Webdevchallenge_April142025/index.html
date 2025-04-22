@@ -10,7 +10,7 @@
 </head>
 <body class="flex justify-center items-start pt-8 min-h-screen bg-sky-50">
 
-    <main class="flex flex-col p-6 gap-y-4 max-w-sm w-full overflow-y-auto rounded-2xl border-4 border-gray-300 bg-white">
+    <main class="flex flex-col p-6 pb-0 gap-y-4 max-w-sm w-full overflow-y-auto rounded-2xl border-4 border-gray-300 bg-white">
 
         <div id="appbar" class="flex gap-x-2 text-sm items-center">
             <i class="bg-orange-500 px-2 py-1 rounded-full bi bi-house-door-fill"></i>
@@ -109,6 +109,28 @@
             </div>
         </div>
 
+        <!-- Bottom Nav inside mockup -->
+        <nav class="sticky bottom-0 bg-white border-t border-gray-300 -mx-6 px-6 pt-2 pb-4">
+            <div class="flex justify-between items-center text-sm text-gray-600">
+            <button class="flex flex-col items-center">
+                <i class="bi bi-house-door-fill text-orange-500 text-lg"></i>
+                <span class="text-xs font-bold text-orange-500">Home</span>
+            </button>
+            <button class="flex flex-col items-center">
+                <i class="bi bi-search text-lg"></i>
+                <span class="text-xs">Search</span>
+            </button>
+            <button class="flex flex-col items-center">
+                <i class="bi bi-cart text-lg"></i>
+                <span class="text-xs">Cart</span>
+            </button>
+            <button class="flex flex-col items-center">
+                <i class="bi bi-person text-lg"></i>
+                <span class="text-xs">Profile</span>
+            </button>
+            </div>
+        </nav>
+  
     </main>
 
 </body>
